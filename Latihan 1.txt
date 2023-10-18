@@ -1,0 +1,10 @@
+n = int(input("Masukkan ukuran matriks (n): "))
+
+matrix = [[0] * n for _ in range(n)]
+
+for i in range(n):
+    matrix[i][i] = 1
+
+print("Matriks identitas berukuran", n, "x", n)
+for row in matrix:
+    print(row)
